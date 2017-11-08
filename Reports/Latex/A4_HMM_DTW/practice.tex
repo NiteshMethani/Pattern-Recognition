@@ -1,0 +1,74 @@
+%\documentclass[a4paper]{report}
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=3cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{subfig}
+\usepackage{float}
+
+\usepackage{csquotes}
+
+%\setlength{\tabcolsep}{0pt}
+
+% Write the title here
+\title{Pattern Recognition\\
+	Assignment 4\\
+	Group No - 36 }
+\author{ED13D000 Bhargava Sai Ramu\\
+	CS17S008 Nitesh Methani}
+
+\begin{document}
+\maketitle
+\hypersetup{linkcolor=black}
+\tableofcontents
+
+% Objectives
+\section{Objectives}
+\input{objectives}
+
+\section{Hidden Markov Model}
+\subsection{Isolated Digits}
+\input{iso_digit_table}
+\input{iso_digit_grid}
+
+\newpage
+\subsection{Connected Digits}
+\input{test_connected_digits}
+
+\section{Recognition of Hand Written data}
+\subsection{Feature Extraction}
+\input{feature_extraction}
+
+\subsection{Isolated Handwritten Characters}
+\input{iso_handwritten_table}
+\input{iso_handwritten_grid}
+
+\subsection{Connected Handwritten Characters}
+\input{test_connected_handwritten}
+
+\newpage
+\section{Dynamic Time Warping}
+\subsection{Observations}
+\input{dtw_table}
+\subsection{Observations}
+\input{dtw_grid}
+Representatives are as follows:\newline
+Class 1 : $30^{th}$ and $31^{st}$ template\newline
+Class 2 : $31^{st}$ and $22^{nd}$ template\newline
+Class 3 : $15^{th}$ and $8^{th}$ template
+\newpage
+\section{Coding Style Improvement}
+\input{improvements}
+\section{Conclusion}
+\input{conclusion}
+\end{document}

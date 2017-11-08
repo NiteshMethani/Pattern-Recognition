@@ -1,0 +1,25 @@
+Table \ref{table:2} is the prediction of our model for the given test data. Initially we had 3 HMM models for 3 digits. We concatenated them with different permutations to get 27 different HMM models. We didn't use dummy state. We modified the transition probabilities of the last state of the individual models such that probability to remain in that state is 0.5 and probability to transit to first state of the next model is also 0.5. The symbol emission probabilities were adjusted accordingly.
+\begin{table}[h!]
+\centering
+
+\begin{tabular}{|c|c||c|c|}\hline
+\textbf{Test 1} & \textbf{Predicted} & \textbf{Test 2(files)} & \textbf{Predicted} \\\hline\hline
+11322a            & d2\_d3\_d2\_       & 342 & d2\_d2\_d1\_  \\\hline
+132a              & d3\_d2\_d1\_       & 343 & d3\_d2\_d1\_  \\\hline
+13a               & d3\_d2\_d2\_       & 344 & d1\_d3\_d1\_  \\\hline
+212a              & d2\_d1\_d1\_       & 345 & d1\_d2\_d1\_  \\\hline
+21a               & d2\_d1\_d2\_       & 346 & d3\_d1\_d2\_   \\\hline
+22123a            & d3\_d3\_d2\_       & 347 & d3\_d2\_d1\_  \\\hline
+22a               & d2\_d2\_d1\_       & 348 & d1\_d3\_d1\_  \\\hline
+233a              & d2\_d2\_d2\_       & 349 & d1\_d2\_d1\_  \\\hline
+23a               & d1\_d1\_d1\_       & 350 & d3\_d1\_d2\_  \\\hline
+311a              & d1\_d1\_d2\_       & 351 & d1\_d2\_d2\_  \\\hline
+31a               & d1\_d1\_d3\_       & 352 & d1\_d1\_d2\_  \\\hline
+322a              & d1\_d2\_d1\_       & 353 & d2\_d1\_d2\_  \\\hline
+331a              & d1\_d2\_d2\_       & - & -  \\\hline
+33a               & d3\_d1\_d2\_       & - & -  \\\hline
+\end{tabular}
+\caption{Connected Digits Recognition}
+\label{table:2}
+\end{table}
+

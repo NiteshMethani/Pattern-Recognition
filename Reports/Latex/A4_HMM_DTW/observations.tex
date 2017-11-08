@@ -1,0 +1,64 @@
+% Code snippet for different types of list is written
+% Use any one..preferably Ordered List Code
+
+Unordered Lists
+ 
+\begin{itemize}
+  \item One entry in the list
+  \item Another entry in the list
+\end{itemize}
+
+
+Ordered Lists
+\begin{enumerate}
+  \item The labels consists of sequential numbers.
+  \item The numbers starts at 1 with every call to the enumerate environment.
+\end{enumerate}
+
+
+Nested Lists
+
+\begin{enumerate}
+   \item The labels consists of sequential numbers.
+   \begin{itemize}
+     \item The individual entries are indicated with a black dot, a so-called bullet.
+     \item The text in the entries may be of any length.
+   \end{itemize}
+   \item The numbers starts at 1 with every call to the enumerate environment.
+\end{enumerate}
+
+\begin{enumerate}
+   \item The labels consists of sequential numbers.
+   \begin{enumerate}
+     \item The individual entries are indicated with a black dot, a so-called bullet.
+     \item The text in the entries may be of any length.
+   \end{enumerate}
+   \item The numbers starts at 1 with every call to the enumerate environment.
+\end{enumerate}
+
+
+% To change the list style
+% enumi for level 1
+% enumii for level 2
+% enumiv for level 4
+
+
+\renewcommand{\labelenumii}{\Roman{enumii}}
+ \begin{enumerate}
+   \item First level item
+   \item First level item
+   \begin{enumerate}
+     \setcounter{enumii}{4}
+     \item Second level item
+     \item Second level item
+       \begin{enumerate}
+       \item Third level item
+       \item Third level item
+         \begin{enumerate}
+         \item Fourth level item
+         \item Fourth level item
+       \end{enumerate}
+     \end{enumerate}
+   \end{enumerate}
+ \end{enumerate}
+

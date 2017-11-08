@@ -1,0 +1,16 @@
+Table \ref{table:4} is the prediction of our model for the given test data. Initially we had 3 HMM models for 3 characters. We concatenated them with different permutations to get 27 different HMM models. We didn't use dummy state. We modified the transition probabilities of the last state of the individual models such that probability to remain in that state is 0.5 and probability to transit to first state of the next model is also 0.5. The symbol emission probabilities were adjusted accordingly.
+\begin{table}[h!]
+\centering
+
+\begin{tabular}{|c|c|}\hline
+
+Given Characters & Predicted\\ \hline\hline
+dA tA dA & tA tA a \\ \hline
+dA tA a & a tA a \\ \hline
+dA dA dA & a dA a \\\hline
+
+\end{tabular}
+\caption{Connected Handwritten Characters Recognition}
+\label{table:4}
+\end{table}
+

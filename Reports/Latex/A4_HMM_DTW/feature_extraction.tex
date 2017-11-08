@@ -1,0 +1,34 @@
+Size Normalization:
+Size of the characters varies from writer to writer due to different writing styles. Therefore to make all the samples of uniform size we did size normalization to improve the recognition performance. Now the character data are normalized to fit into a box of unit length.
+Other features extracted are as follows:
+\begin{enumerate}
+	\item Features
+	\begin{enumerate}
+		\item Normalized Coordinate Values : Normalized X and Y coordinates are used as features.
+		Reason : They represent the shape of the character in abstract format.
+		
+		\item Deviation Features : Characters vary in size and shape with the variation in character trajectories either in horizontal or vertical directions. So deviation features are extracted.
+		
+		\item Zero Mean Feature : Distance of the horizontal and vertical coordinate values from the horizontal and vertical means is calculated. Since data points are subtracted from the data mean, the resulting data is named as Zero mean features.
+		
+		\item Trajectory Features : While writing a character handwriting forms a trajectory which comprises of angle and distance parameters.
+		Distance and angle parameter from the origin of the Cartesian Coordinate System and the horizontal axis respectively.
+		Distance and angle parameter from the centroid.
+		Distance and angle parameter between the consecutive points.
+	\end{enumerate}
+	\item Other Features
+	\begin{enumerate}
+		\item Curvature
+		\item Cosine Distances
+		\item Slope
+		\item First Derivative
+		\item Second Derivative
+		\item Normalized First Derivative
+		\item Normalized Second Derivative
+	\end{enumerate}
+\end{enumerate}
+The values in the extracted feature are normalizd to fit in a window size of [0, 1].
+
+
+
+
